@@ -15,7 +15,6 @@ function App() {
     if ((e.key === "Enter" || e.type === "click") && e.target.value !== "") {
       setLoading(true);
       const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
-      console.log("ÁPIKEY", apiKey )
       const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
       try {
         const response = await fetch(url);
