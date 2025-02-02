@@ -4,7 +4,7 @@ import '../styles/searchlocation.css'
 
 const SearchLocation = ({ city, setCity, handleSubmit }) => {
   return (
-    <div class="search-wrapper">
+    <div className="search-wrapper">
       <TextField
         style={{width: '100%'}}
         id="outlined-basic"
